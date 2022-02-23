@@ -1,0 +1,24 @@
+<h1>Main</h1>
+<div ng-controller="MainController">
+    <h3>{{tagline}}</h3>
+    {{student[0].name}}
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Add student</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" ng-model = "formData.name" aria-describedby="emailHelp">
+          
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="createStudent()">Submit</button>
+      </form>
+      <br>
+      <hr>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Delete student</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" ng-model = "id" aria-describedby="emailHelp">
+          
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="deleteStudent()">Delete</button>
+      </form>
+  
+</div>
